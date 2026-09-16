@@ -5,7 +5,7 @@ This add-on moves the existing read-only monitor to the always-on Home Assistant
 ## What it does
 
 - Polls the same Nest and FranklinWH entities every 60 seconds by default.
-- Writes daily JSONL logs to the add-on's private configuration directory, visible in backups.
+- Writes daily JSONL logs to the add-on's persistent data directory, visible in backups.
 - Emits the same records to the add-on log.
 - Never calls `climate.set_temperature`, changes Nest mode, or controls FranklinWH.
 

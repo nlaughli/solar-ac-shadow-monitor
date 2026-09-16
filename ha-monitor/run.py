@@ -14,7 +14,7 @@ from solar_ac.home_assistant import fetch_states, normalize
 
 
 OPTIONS_PATH = Path("/data/options.json")
-LOG_DIR = Path("/config")
+LOG_DIR = Path("/data")
 
 
 def load_config():

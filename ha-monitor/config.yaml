@@ -1,5 +1,5 @@
 name: Solar AC Shadow Monitor
-version: 0.1.5
+version: 0.1.6
 slug: solar_ac_shadow_monitor
 description: Read-only solar and Nest shadow monitor. No thermostat or battery writes.
 url: https://github.com/nlaughli/solar-ac-shadow-monitor
