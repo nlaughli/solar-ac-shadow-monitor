@@ -30,9 +30,11 @@ def load_config():
 
 
 def main():
-    token = os.environ.get("SUPERVISOR_TOKEN")
+    # SUPERVISOR_TOKEN is the current documented name. Older Supervisor
+    # releases may still inject the predecessor name for compatibility.
+    token = os.environ.get("SUPERVISOR_TOKEN") or os.environ.get("HASSIO_TOKEN")
     if not token:
-        raise RuntimeError("SUPERVISOR_TOKEN is unavailable; enable homeassistant_api in the add-on manifest")
+        raise RuntimeError("Supervisor API token is unavailable; enable homeassistant_api in the app manifest")
     config, poll_seconds = load_config()
     LOG_DIR.mkdir(parents=True, exist_ok=True)
     controller = Controller()
