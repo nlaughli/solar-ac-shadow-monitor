@@ -26,7 +26,7 @@ The demo runs four simulated hours of strong export followed by cloud/import con
 
 1. Install Home Assistant on the chosen always-on host. See [setup](docs/SETUP.md).
 2. Add FranklinWH and Nest and verify readings against their apps.
-3. Copy `config.example.json` to `config.local.json`. Fill in actual entity IDs, including the Nest humidity sensor when available, and HA temperature units. Verify both power signs; placeholders deliberately prevent valid energy recommendations.
+3. Copy `controller-config.example.json` to `config.local.json`. Fill in actual entity IDs, including the Nest humidity sensor when available, and HA temperature units. Verify both power signs; placeholders deliberately prevent valid energy recommendations.
 4. Set `HA_URL` and `HA_TOKEN` in the process environment. Create the long-lived token in your HA user profile; never commit or share it. Use HTTPS outside a trusted local network.
 5. Run `python -m solar_ac --config config.local.json --once` and inspect the log.
 6. Run the same command without `--once` to poll every 60 seconds. Keep the terminal open or supervise the process on the selected host. Stop with Ctrl+C. No background service has been installed yet.

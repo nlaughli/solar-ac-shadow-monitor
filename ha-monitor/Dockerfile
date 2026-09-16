@@ -11,6 +11,6 @@ RUN apk add --no-cache python3 tzdata
 
 WORKDIR /app
 COPY solar_ac /app/solar_ac
-COPY ha-monitor/run.py /app/run.py
+COPY run.py /app/run.py
 
 CMD ["python3", "/app/run.py"]

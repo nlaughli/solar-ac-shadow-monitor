@@ -6,3 +6,4 @@ config.local.json
 logs/
 # Household-specific operator notes are retained locally and never published.
 docs/SHIP_RUNBOOK.md
+public-release/
