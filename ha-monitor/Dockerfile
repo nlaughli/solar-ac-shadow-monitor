@@ -12,5 +12,7 @@ RUN apk add --no-cache python3 tzdata
 WORKDIR /app
 COPY solar_ac /app/solar_ac
 COPY run.py /app/run.py
+COPY run.sh /run.sh
+RUN chmod a+x /run.sh
 
-CMD ["python3", "/app/run.py"]
+CMD ["/run.sh"]
