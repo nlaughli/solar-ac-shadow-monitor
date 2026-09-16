@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+.venv/
+.env
+config.local.json
+logs/
+# Household-specific operator notes are retained locally and never published.
+docs/SHIP_RUNBOOK.md

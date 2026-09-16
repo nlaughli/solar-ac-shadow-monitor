@@ -1,0 +1,39 @@
+name: Solar AC Shadow Monitor
+version: 0.1.0
+slug: solar_ac_shadow_monitor
+description: Read-only solar and Nest shadow monitor. No thermostat or battery writes.
+url: https://github.com/nlaughli/solar-ac-shadow-monitor
+arch:
+  - aarch64
+startup: services
+boot: auto
+init: false
+homeassistant_api: true
+map:
+  - addon_config
+options:
+  poll_seconds: 60
+  energy_max_age_seconds: 180
+  nest_max_age_seconds: 1800
+  temperature_unit: F
+  grid_positive: import
+  battery_positive: discharge
+  nest: climate.REPLACE_ME
+  grid: sensor.REPLACE_ME_grid
+  battery: sensor.REPLACE_ME_battery
+  soc: sensor.REPLACE_ME_soc
+  solar: sensor.REPLACE_ME_solar
+  home: sensor.REPLACE_ME_home
+schema:
+  poll_seconds: int(30,300)
+  energy_max_age_seconds: int(60,900)
+  nest_max_age_seconds: int(300,14400)
+  temperature_unit: list(F|C)
+  grid_positive: list(import|export)
+  battery_positive: list(charge|discharge)
+  nest: str
+  grid: str
+  battery: str
+  soc: str
+  solar: str
+  home: str

@@ -1,0 +1,16 @@
+{
+  "temperature_unit": "F",
+  "grid_positive": "VERIFY_ME",
+  "battery_positive": "VERIFY_ME",
+  "energy_max_age_seconds": 180,
+  "nest_max_age_seconds": 1800,
+  "entities": {
+    "nest": "climate.REPLACE_ME",
+    "humidity": "sensor.REPLACE_ME_humidity",
+    "grid": "sensor.REPLACE_ME_grid",
+    "battery": "sensor.REPLACE_ME_battery",
+    "soc": "sensor.REPLACE_ME_soc",
+    "solar": "sensor.REPLACE_ME_solar",
+    "home": "sensor.REPLACE_ME_home"
+  }
+}
